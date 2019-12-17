@@ -187,9 +187,15 @@ Theory and previous results background
 
 We quantify the strength of the central galaxy alignment signal with two variables: the position angle difference between the central galaxy and its host cluster $\Delta \eta$, and the central galaxy alignment angle for each central-satellite pair $\theta_{cen}$. They are both defined to lie in the range $[0 \degree, 90 \degree]$, with values closer to $0 \degree$ indicating stronger central galaxy alignment.
 
-Measuring $\Delta \eta$ requires an approximation of the overall cluster shape from the distribution of satellite galaxies.
+Measuring $\Delta \eta$ requires an approximation of the overall cluster shape from the distribution of satellite galaxies. We use 2 different methods to determine the ellipticity and orientation of the cluster in order to 
 
 \subsubsection{method 1}
+
+We follow the method used by \citet{Huang16} to calculate the cluster ellipticity and position angle. We use all satellite galaxies with $p_{mem} \geq 0.2$ in order to reasonably trace the shape of the cluster. We first calculate the reduced second moments of the positions of all viable satellites in the cluster:
+\begin{equation}
+M_{xx} \equiv \frac{\sum_i p_{mem} \frac{x_i^2}{r_i^2}}{\sum_i p_{mem}}, M_{xy} \equiv \frac{\sum_i p_{mem} \frac{x_i y_i}{r_i^2}}{\sum_i p_{mem}}, M_{yy} \equiv \frac{\sum_i p_{mem} \frac{y_i^2}{r_i^2}}{\sum_i p_{mem}}
+\end{equation}
+where $x_i$ and $y_i$ are the distances of satellite galaxy $i$ from the central galaxy in RA and Dec, respectively.
 
 \subsubsection{method 2}
 
